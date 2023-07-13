@@ -1,0 +1,148 @@
+:root {
+    --hover-bg: #e7da60;
+    --button-bg: #e18411;
+    --button-text: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+}
+
+#start-button {
+    border: 0;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+
+#start-button:hover {
+    background-color: var(--hover-bg);
+    cursor: pointer;
+}
+
+p {
+    font-weight: bold;
+    width: 30%;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+nav {
+    font-size: large;
+    margin-right: 10px;
+    transform: translateX(-25px);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+
+    color: var(--hover-bg);
+}
+
+.quizpage {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+    margin: 0 auto;
+    display: none;
+}
+
+ol {
+    text-align: left;
+    transform: translateX(-25px);
+}
+
+ol li {
+    margin-bottom: 5px;
+}
+
+ol li button {
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+}
+
+.highscores button {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+    width: auto;
+}
+
+ol li button, .highscores button {
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+
+.highscores {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    width: 600px;
+    margin: auto;
+    margin-top: 0;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--hover-bg);
+}
+
+.initials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.highscores button {
+    transform: translateX(20px);
+}
+
+#lastPageButtons {
+    transform: translateX(-20px);
+}
+
+#highScoresList {
+    transform: translateX(0px);
+    text-align: left;
+    padding-left: 20px;
+    background-color: #c4d2ad;
+}
+
+#lastPageButtons {
+    display: none;
+}
+
+#line {
+    display: none;
+}
+
+/*set the width of the ol items on the quizpages to precisely the width of the visible buttons, so that clicking to the right of them where the button isn't apparent doesn't consume the once:true parameter*/
+.ol {
+    width: 200px;
+}
